@@ -1,0 +1,54 @@
+import React from 'react';
+
+const Registration = () => {
+  return (
+    <div>
+<main style={{ minHeight: "70vh" }}>
+  <h2 className="text-center text-white bg-primary m-2">Регистрация</h2>
+  <div className="p-3">
+    <form className="w-50 m-auto border p-3" style={{ minWidth: 300 }}>
+      <div className="mb-3">
+        <label htmlFor="name" className="form-label">
+          Введите фамилию, имя, отчество:
+        </label>
+        <input type="text" className="form-control" id="name" />
+        <div id="emailHelp1" className="form-text">
+          Обязательное поле
+        </div>
+      </div>
+      <div className="mb-3">
+        <label htmlFor="email" className="form-label">
+          Введите адрес электронной почты
+        </label>
+        <input type="email" className="form-control" id="email" />
+        <div className="form-text">
+          Мы никогда не делимся Вашими e-mail ни с кем. Обязательное поле
+        </div>
+      </div>
+      <div className="mb-3">
+        <label htmlFor="password" className="form-label">
+          Введите пароль:
+        </label>
+        <input type="password" className="form-control" id="password" />
+        <div className="form-text">Обязательное поле</div>
+      </div>
+      <div className="mb-3">
+        <label htmlFor="confirm_password" className="form-label">
+          Повторите пароль:
+        </label>
+        <input type="password" className="form-control" id="confirm_password" />
+        <div className="form-text" />
+      </div>
+      <input
+        type="submit"
+        className="btn btn-primary"
+        defaultValue="Зарегистрироваться"
+      />
+    </form>
+  </div>
+</main>
+
+    </div>
+  );
+    };
+    export default Registration;
