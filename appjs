@@ -1,0 +1,32 @@
+import {Routes, Route} from "react-router-dom";
+import Main from "./pages/main";
+import BasketPage from "./pages/basketpage";
+import Catalogpage from "./pages/catalogpage";
+import EditPage from "./pages/editpage";
+import HeaderEditPage from "./pages/headereditpage";
+import LoginPage from "./pages/loginpage";
+import PlacedOrdersPage from "./pages/placed_orderspage";
+import RegistrationPage from "./pages/registrationpage";
+
+
+
+
+function App() {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path={'/'} element={<Main/>}/>
+        <Route path={'/catalogepage'} element={<Catalogpage/>}/>
+        <Route path={'/editpage'} element={<EditPage/>}/>
+        <Route path={'/basketpage'} element={<BasketPage/>}/>
+        <Route path={'/headereditpage'} element={<HeaderEditPage/>}/>
+        <Route path={'/loginpage'} element={<LoginPage/>}/>
+        <Route path={'/placed_orderspage'} element={<PlacedOrdersPage/>}/>
+        <Route path={'/registrationpage'} element={<RegistrationPage/>}/>
+      </Routes>
+  <Main/>
+    </div>
+  );
+}
+
+export default App;
