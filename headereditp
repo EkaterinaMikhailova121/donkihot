@@ -1,0 +1,17 @@
+import React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Header_editt from "../components/header_editt";
+
+const HeaderEditPage = () => {
+    return(
+<div>
+<Header/>
+<main style={{'minHeight':'70vh'}}><Header_editt/></main>
+
+<Footer/>
+</div>
+    );
+};
+
+export default HeaderEditPage;
