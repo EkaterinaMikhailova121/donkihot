@@ -1,0 +1,75 @@
+import React from 'react';
+
+const BasketRobins = () => {
+  return (
+    <div>
+<main style={{ minHeight: "70vh" }}>
+  <h2 className="text-center text-white bg-primary m-2">Корзина</h2>
+  <table className="table my-3 mx-auto w-75 table-hover table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">№ п/п</th>
+        <th scope="col">Наименование</th>
+        <th scope="col">Описание</th>
+        <th scope="col">Количество</th>
+        <th scope="col">Стоимость</th>
+        <th scope="col" />
+        <th scope="col" />
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Матрешка</td>
+        <td>
+          Матрешка деревянная. Русская традиционная игрушка. Комплект состоит из
+          5 фигур.
+        </td>
+        <td>2</td>
+        <td>1500</td>
+        <td>
+          {" "}
+          <button type="button" className="btn btn-primary">
+            +
+          </button>
+        </td>
+        <td>
+          <button type="button" className="btn btn-primary">
+            -
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Ложка</td>
+        <td>
+          Ложка деревянная расписная. На ложке нанесен традиционный русский узор
+          - хохлома. Комплект состоит из 1 столовой ложки.
+        </td>
+        <td>5</td>
+        <td>500</td>
+        <td>
+          {" "}
+          <button type="button" className="btn btn-primary">
+            +
+          </button>
+        </td>
+        <td>
+          <button type="button" className="btn btn-primary">
+            -
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p className="fw-bold text-end w-75 m-auto">Итого: 5500 руб</p>
+  <button type="button" className="btn btn-primary mx-5">
+    Оформить заказ
+  </button>
+  <br />
+</main>
+
+    </div>
+  );
+    };
+    export default BasketRobins;
