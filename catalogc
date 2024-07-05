@@ -1,0 +1,81 @@
+import React from 'react';
+
+const Cataloguee = () => {
+  return (
+    <div>
+<main style={{ minHeight: "70vh", minWidth: 320 }} className="w-75 m-auto">
+  <h2 className="text-center text-white bg-primary m-2">Каталог товаров</h2>
+  <div className="d-flex flex-row flex-wrap justify-content-around">
+    <div
+      className="d-flex flex-row flex-wrap border m-3 p-3"
+      style={{ minWidth: 300, width: "45%" }}
+    >
+      <p className=" text-primary" style={{ minWidth: 250, width: "45%" }}>
+        id:
+      </p>
+      <p className="" style={{ minWidth: 250, width: "45%" }}>
+        14
+      </p>
+      <p className=" text-primary" style={{ minWidth: 250, width: "45%" }}>
+        Название товара:
+      </p>
+      <p className="" style={{ minWidth: 250, width: "45%" }}>
+        Матрешка
+      </p>
+      <p className=" text-primary" style={{ minWidth: 250, width: "45%" }}>
+        Описание:
+      </p>
+      <p className="" style={{ minWidth: 250, width: "45%" }}>
+        Матрешка деревянная. Русская традиционная игрушка. Комплект состоит из 5
+        фигур.
+      </p>
+      <p className=" text-primary" style={{ minWidth: 250, width: "45%" }}>
+        Цена:
+      </p>
+      <p className="" style={{ minWidth: 250, width: "45%" }}>
+        1500 руб
+      </p>
+      <button type="button" className="btn btn-primary w-50">
+        Купить
+      </button>
+    </div>
+    <div
+      className="d-flex flex-row flex-wrap border m-3 p-3"
+      style={{ minWidth: 300, width: "45%" }}
+    >
+      <p className="w-50 text-primary" style={{ minWidth: 250 }}>
+        id:
+      </p>
+      <p className="w-50" style={{ minWidth: 250 }}>
+        15
+      </p>
+      <p className="w-50 text-primary" style={{ minWidth: 250 }}>
+        Название товара:
+      </p>
+      <p className="w-50" style={{ minWidth: 250 }}>
+        Ложка
+      </p>
+      <p className="w-50 text-primary" style={{ minWidth: 250 }}>
+        Описание:
+      </p>
+      <p className="w-50" style={{ minWidth: 250 }}>
+        Ложка деревянная расписная. На ложке нанесен традиционный русский узор -
+        хохлома. Комплект состоит из 1 столовой ложки.
+      </p>
+      <p className="w-50 text-primary" style={{ minWidth: 250 }}>
+        Цена:
+      </p>
+      <p className="w-50" style={{ minWidth: 250 }}>
+        500 руб
+      </p>
+      <button type="button" className="btn btn-primary w-50">
+        Купить
+      </button>
+    </div>
+  </div>
+</main>
+
+    </div>
+  );
+    };
+    export default Cataloguee;
