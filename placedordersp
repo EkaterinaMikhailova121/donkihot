@@ -1,0 +1,17 @@
+import React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Placed_orders from "../components/placed_orders";
+
+const PlacedOrdersPage = () => {
+    return(
+<div>
+<Header/>
+<main style={{'minHeight':'70vh'}}><Placed_orders/></main>
+
+<Footer/>
+</div>
+    );
+};
+
+export default PlacedOrdersPage;
