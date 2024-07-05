@@ -1,0 +1,22 @@
+import React from 'react';
+
+const Cart = (props) => {
+    return (
+                <div className="d-flex flex-row flex-wrap border m-3 p-3" style={{minWidth: '300px', width: '45%'}}>
+                    
+                        <p className="w-50 text-primary" style={{minWidth: '250px'}}>id:</p>
+                        <p className="w-50" style={{minWidth: '300px'}}>{props.data.id}</p>
+
+                        <p className="w-50 text-primary" style={{minWidth: '250px'}}>Название товара:</p>
+                        <p className="w-50" style={{minWidth: '300px'}}>{props.data.name}</p>
+
+                        <p className="w-50 text-primary" style={{minWidth: '250px'}}>Описание:</p>
+                        <p className="w-50" style={{minWidth: '300px'}}>{props.data.phone}</p>
+
+                        <p className="w-50 text-primary" style={{minWidth: '250px'}}>Цена:</p>
+                        <p className="w-50" style={{minWidth: '300px'}}>{props.data.kind}</p>
+
+                        <button type="button" className="btn btn-primary w-50">Купить</button>
+                </div> );
+};
+export default Cart;       
